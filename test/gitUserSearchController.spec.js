@@ -1,5 +1,5 @@
 describe('GitUserSearchController', function() {
-	beforeEach(module('GitUserSearc'));
+	beforeEach(module('GitUserSearch'));
 
 	var scope, ctrl;
 
@@ -10,7 +10,7 @@ describe('GitUserSearchController', function() {
 		});
 	}));
 
-	it('initialises with an empty search result and term', functin() {
+	it('initialises with an empty search result and term', function() {
 		expect(scope.searchResult).toBeUndefined();
 		expect(scope.searchTerm).toBeUndefined();
 	});
