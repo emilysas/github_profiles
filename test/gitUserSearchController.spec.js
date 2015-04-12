@@ -14,7 +14,7 @@ describe('GitUserSearchController', function() {
 		expect(scope.searchResult).toBeUndefined();
 		expect(scope.searchTerm).toBeUndefined();
 	});
-	
+
 	describe ('when searching for a user', function() {
 
 		var items = [
@@ -31,6 +31,8 @@ describe('GitUserSearchController', function() {
 		];
 
 		it('displays search results', function() {
+			scope.searchTerm = 'hello';
+			scope.doSearch();
 			expect(scope.searchResult.items).toEqual(items);
 		})
 	})
